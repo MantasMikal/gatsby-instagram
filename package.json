@@ -1,0 +1,40 @@
+{
+  "name": "gatsby-instagram",
+  "description": "Gatsby instagram starter",
+  "version": "1.0.0",
+  "author": "Mantas Mikalauskas <mikalauskas.it@gmail.com>",
+  "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
+    "gatsby": "^2.0.83",
+    "gatsby-image": "^2.0.25",
+    "gatsby-plugin-manifest": "^2.0.13",
+    "gatsby-plugin-offline": "^2.0.20",
+    "gatsby-plugin-react-helmet": "^3.0.5",
+    "gatsby-plugin-sharp": "^2.0.17",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-source-instagram-all": "^2.0.2",
+    "gatsby-transformer-sharp": "^2.1.10",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-helmet": "^5.2.0",
+    "styled-components": "^3.4.10"
+  },
+  "devDependencies": {
+    "prettier": "^1.15.3"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write '**/*.js'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MantasMikal/gatsby-instagram"
+  }
+}
