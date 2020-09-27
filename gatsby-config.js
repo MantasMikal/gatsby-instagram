@@ -25,11 +25,10 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: "11298245131.1677ed0.ab64e2fc3d5b4b95842e717515e6f9d6"
+        access_token: "IGQVJWUTVheTBiNC1wa3k0LUJTeVZAEY1dXVFFlTmEtMkotYzMyZAXl5dEJpOFdBZATRCQ0tfaVA1ODRpUkJFRmpFT04za1lCQVliZADd5Q2FUaFoxRGtJeHgydDZAnWVBaQmZA3MWYybnAtNlh5c09XT3ZAHMAZDZD"
       }
     },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    'gatsby-plugin-offline',
+    `gatsby-plugin-sharp`
   ],
 }
