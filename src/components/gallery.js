@@ -1,26 +1,26 @@
 import React from 'react'
-import styled from 'styled-components'
-import Image from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
-const Container = styled('div')`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto;
-`
+const Gallery = ({ posts }) => {
+  return (
+    <div style={{
+      display: 'grid',
+      gridTemplateColumns: 'repeat(4, 1fr)'
+    }}>
+      {posts.edges.map(
+        item =>
+          item.node.localImage && (
+            <GatsbyImage
+              image={item.node.localImage.childImageSharp.gatsbyImageData}
+              key={item.node.id}
+              alt={
+                item.node.caption || 'Instagram Post'
+              }
+            />
+          )
+      )}
+    </div>
+  )
+}
 
-export default ({ posts }) => (
-  <Container className="grid">
-    {posts.edges.map(
-      (item, i) =>
-        item.node.localImage && (
-          <Image
-            fluid={item.node.localImage.childImageSharp.fluid}
-            key={i}
-            alt={
-              item.node.caption || 'Instagram Post'
-            }
-          />
-        )
-    )}
-  </Container>
-)
+export default Gallery

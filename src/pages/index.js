@@ -3,23 +3,24 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import Gallery from '../components/gallery'
 
-export default ({ data }) => (
+const IndexPage = ({ data }) => (
   <Layout>
     <Gallery posts={data.allInstagramContent} />
   </Layout>
 )
+
+export default IndexPage
 
 export const query = graphql`
   query InstagramPosts {
     allInstagramContent {
       edges {
         node {
+          id
           caption
           localImage {
             childImageSharp {
-              fluid(maxHeight: 500, maxWidth: 500, quality: 50) {
-                ...GatsbyImageSharpFluid_withWebp_tracedSVG
-              }
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 500, height: 500)
             }
           }
         }

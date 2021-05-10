@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Instagram',
+    title: 'Gatsby Source Instagram',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -17,17 +17,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
-      },
-    },
-    {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: "IGQVJWUTVheTBiNC1wa3k0LUJTeVZAEY1dXVFFlTmEtMkotYzMyZAXl5dEJpOFdBZATRCQ0tfaVA1ODRpUkJFRmpFT04za1lCQVliZADd5Q2FUaFoxRGtJeHgydDZAnWVBaQmZA3MWYybnAtNlh5c09XT3ZAHMAZDZD"
+        access_token: "IGQVJYX2JHZAnJtSk5TRkhZAMzFJTUxWcnpGSDR1a2pMUTBmSlZAGMmhyWG9rUmttMS02cXQyZAGJBLXVMemZAXcVRLR1VfQUh2WFBPLUs0R3dWWm5SY3g2bFVwR1VVTGxxbVdXZADJGNzRpM09sR0UxbEhSRQZDZD"
       }
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`
   ],
