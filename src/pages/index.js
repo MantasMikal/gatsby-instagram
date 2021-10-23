@@ -3,11 +3,12 @@ import Layout from '../components/layout'
 import { graphql } from 'gatsby'
 import Gallery from '../components/gallery'
 
-const IndexPage = ({ data }) => (
+const IndexPage = ({ data }) => {
+  return (
   <Layout>
     <Gallery posts={data.allInstagramContent} />
   </Layout>
-)
+)}
 
 export default IndexPage
 

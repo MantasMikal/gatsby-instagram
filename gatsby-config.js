@@ -10,13 +10,14 @@ module.exports = {
         name: 'gatsby-instagram',
         short_name: 'starter',
         start_url: '/',
-        background_color: '#663399',
+        background_color: '#fff',
         theme_color: '#663399',
         display: 'minimal-ui',
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
     {
+      // resolve: require.resolve(`./plugins/gatsby-source-instagram-all`),
       resolve: `gatsby-source-instagram-all`,
       options: {
         access_token: "IGQVJVWFY2Tkw3SlBzaFJOZAzc3M1dqVU14SkM1UHZA4UVZAzM284ckNHaVBRZAmtYZA2hyaXpkbzcyOVV1LWN1dk5rX19SaHJVc3hmamVCN3FCQXhRQmtfMUxjNDhIdlJibFRleFNxaFRtVUF1eGhFYnFqbQZDZD"
