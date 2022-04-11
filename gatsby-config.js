@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Source Instagram',
@@ -20,7 +24,7 @@ module.exports = {
       // resolve: require.resolve(`./plugins/gatsby-source-instagram-all`),
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: "IGQVJVWFY2Tkw3SlBzaFJOZAzc3M1dqVU14SkM1UHZA4UVZAzM284ckNHaVBRZAmtYZA2hyaXpkbzcyOVV1LWN1dk5rX19SaHJVc3hmamVCN3FCQXhRQmtfMUxjNDhIdlJibFRleFNxaFRtVUF1eGhFYnFqbQZDZD"
+        access_token: process.env.INSTAGRAM_ACCESS_TOKEN,
       }
     },
     `gatsby-plugin-image`,
