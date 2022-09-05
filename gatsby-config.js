@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Source Instagram',
@@ -22,7 +24,7 @@ module.exports = {
       options: {
         // don't forget to store your access token in a .env file
         // https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/
-        access_token: "IGQVJWRkJBeVlLNHpvTWJUTzl3eTlfQXZA3djhqTURmdFZA2Q1hJZA3hjRmY4WnVEZA3dqT0ZAlN0VxNUVuUzFFUUhpMHVPOFQzTmZAwVS03M3dVaFpuUzBZAekRqNmJ6YXRWMV9GNmp3eG5PdXVjeDdlSk92dgZDZD"
+        access_token: process.env.INSTAGRAM_TOKEN
       }
     },
     `gatsby-plugin-image`,
