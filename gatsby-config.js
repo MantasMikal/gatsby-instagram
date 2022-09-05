@@ -22,7 +22,7 @@ module.exports = {
       options: {
         // don't forget to store your access token in a .env file
         // https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/
-        access_token: "IGQVJXS0VadGE4OG5qeE8yN0RneEFNYkZAVbXVpTklTM2hOXzVHU1llMFFVZAjlGNGVud2tDbDZAHazNVdEM3SnM3TTBaS3ZAvZAVpldkkxYzgzc1BvcDVQcW45RW9GZA3ltaHBnam1Tajg5WTY4djI1WnBnLQZDZD"
+        access_token: "IGQVJWRkJBeVlLNHpvTWJUTzl3eTlfQXZA3djhqTURmdFZA2Q1hJZA3hjRmY4WnVEZA3dqT0ZAlN0VxNUVuUzFFUUhpMHVPOFQzTmZAwVS03M3dVaFpuUzBZAekRqNmJ6YXRWMV9GNmp3eG5PdXVjeDdlSk92dgZDZD"
       }
     },
     `gatsby-plugin-image`,
