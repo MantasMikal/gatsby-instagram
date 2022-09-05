@@ -22,8 +22,6 @@ module.exports = {
       // resolve: require.resolve(`./plugins/gatsby-source-instagram-all`),
       resolve: `gatsby-source-instagram-all`,
       options: {
-        // don't forget to store your access token in a .env file
-        // https://www.gatsbyjs.com/docs/how-to/local-development/environment-variables/
         access_token: process.env.INSTAGRAM_TOKEN
       }
     },
